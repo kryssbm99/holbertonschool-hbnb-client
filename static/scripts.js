@@ -235,7 +235,7 @@ function logoutUser() {
 // Function to check authentication specifically for place details page
 function checkAuthenticationForPlaceDetails(placeId) {
     const token = getCookie('token');
-    const addReviewSection = document.getElementById('add-review');
+    const addReviewSection = document.querySelector('.review-button-div');
 
     if (!token) {
         if (addReviewSection) addReviewSection.style.display = 'none';
@@ -262,57 +262,28 @@ async function fetchPlaceDetails(token, placeId) {
 // Function to display detailed information about a place
 function displayPlaceDetails(place) {
     const placeDetailsSection = document.getElementById('place-details');
-    placeDetailsSection.innerHTML = '';
-
-    const nameElement = document.createElement('h2');
-    nameElement.textContent = place.name;
-    placeDetailsSection.appendChild(nameElement);
-
-    const hostElement = document.createElement('p');
-    hostElement.textContent = `Host: ${place.host_name}`;
-    placeDetailsSection.appendChild(hostElement);
-
-    const priceElement = document.createElement('p');
-    priceElement.textContent = `Price per night: $${place.price_per_night}`;
-    placeDetailsSection.appendChild(priceElement);
-
-    const locationElement = document.createElement('p');
-    locationElement.textContent = `Location: ${place.city_name}, ${place.country_name}`;
-    placeDetailsSection.appendChild(locationElement);
-
-    const descriptionElement = document.createElement('p');
-    descriptionElement.textContent = `Description: ${place.description}`;
-    placeDetailsSection.appendChild(descriptionElement);
-
-    const amenitiesElement = document.createElement('p');
-    amenitiesElement.textContent = `Amenities: ${place.amenities.join(', ')}`;
-    placeDetailsSection.appendChild(amenitiesElement);
-
-    if (place.images && place.images.length > 0) {
-        place.images.forEach(image => {
-            const imgElement = document.createElement('img');
-            imgElement.src = image;
-            placeDetailsSection.appendChild(imgElement);
-        });
-    }
+    placeDetailsSection.innerHTML = `
+        <img src="static/place${place.id.split('-')[1]}.jpg" alt="${place.name}" class="place-large-image">
+        <div class="place-info">
+            <p><strong>Host:</strong> ${place.host_name}</p>
+            <p><strong>Price per night:</strong> $${place.price_per_night}</p>
+            <p><strong>Location:</strong> ${place.city_name}, ${place.country_name}</p>
+            <p><strong>Description:</strong> ${place.description}</p>
+            <p><strong>Amenities:</strong> ${place.amenities.join(', ')}</p>
+        </div>
+    `;
 
     const reviewsSection = document.getElementById('reviews');
-    reviewsSection.innerHTML = '<h2>Reviews</h2>';
+    reviewsSection.innerHTML = '<h3>Reviews</h3>';
     place.reviews.forEach(review => {
         const reviewCard = document.createElement('div');
         reviewCard.className = 'review-card';
 
-        const reviewComment = document.createElement('p');
-        reviewComment.textContent = `Comment: ${review.comment}`;
-        reviewCard.appendChild(reviewComment);
-
-        const reviewUser = document.createElement('p');
-        reviewUser.textContent = `User: ${review.user_name}`;
-        reviewCard.appendChild(reviewUser);
-
-        const reviewRating = document.createElement('p');
-        reviewRating.textContent = `Rating: ${review.rating}/5`;
-        reviewCard.appendChild(reviewRating);
+        reviewCard.innerHTML = `
+            <h4>${review.user_name}</h4>
+            <p>${review.comment}</p>
+            <p>Rating: ${review.rating} stars</p>
+        `;
 
         reviewsSection.appendChild(reviewCard);
     });
