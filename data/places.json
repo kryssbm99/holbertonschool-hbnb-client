@@ -65,7 +65,7 @@
         "reviews": []
     },
     {
-        "id": "place-4",
+        "id": "place-2",
         "host_id": "user-1",
         "host_name": "John Doe",
         "description": "A stylish apartment in downtown.",
@@ -83,7 +83,7 @@
         "reviews": []
     },
     {
-        "id": "place-5",
+        "id": "place-1",
         "host_id": "user-2",
         "host_name": "Jane Smith",
         "description": "A cozy mountain cabin.",
@@ -107,7 +107,7 @@
         ]
     },
     {
-        "id": "place-6",
+        "id": "place-3",
         "host_id": "user-3",
         "host_name": "Alice Johnson",
         "description": "A modern loft in the heart of the city.",
@@ -131,7 +131,7 @@
         ]
     },
     {
-        "id": "place-7",
+        "id": "place-1",
         "host_id": "user-1",
         "host_name": "John Doe",
         "description": "A quaint bed and breakfast.",
@@ -149,7 +149,7 @@
         "reviews": []
     },
     {
-        "id": "place-8",
+        "id": "place-2",
         "host_id": "user-2",
         "host_name": "Jane Smith",
         "description": "A luxurious villa with a private pool.",
@@ -167,7 +167,7 @@
         "reviews": []
     },
     {
-        "id": "place-9",
+        "id": "place-1",
         "host_id": "user-3",
         "host_name": "Alice Johnson",
         "description": "A charming lakeside cottage.",
@@ -191,7 +191,7 @@
         ]
     },
     {
-        "id": "place-10",
+        "id": "place-1",
         "host_id": "user-1",
         "host_name": "John Doe",
         "description": "A spacious country house.",
@@ -209,7 +209,7 @@
         "reviews": []
     },
     {
-        "id": "place-11",
+        "id": "place-2",
         "host_id": "user-2",
         "host_name": "Jane Smith",
         "description": "A chic downtown apartment.",
@@ -233,7 +233,7 @@
         ]
     },
     {
-        "id": "place-12",
+        "id": "place-3",
         "host_id": "user-3",
         "host_name": "Alice Johnson",
         "description": "A cozy studio in the city center.",
@@ -251,7 +251,7 @@
         "reviews": []
     },
     {
-        "id": "place-13",
+        "id": "place-2",
         "host_id": "user-1",
         "host_name": "John Doe",
         "description": "A luxurious penthouse.",
@@ -280,7 +280,7 @@
         ]
     },
     {
-        "id": "place-14",
+        "id": "place-3",
         "host_id": "user-2",
         "host_name": "Jane Smith",
         "description": "A peaceful retreat in the woods.",
@@ -298,7 +298,7 @@
         "reviews": []
     },
     {
-        "id": "place-15",
+        "id": "place-1",
         "host_id": "user-3",
         "host_name": "Alice Johnson",
         "description": "A charming townhouse.",
@@ -322,7 +322,7 @@
         ]
     },
     {
-        "id": "place-16",
+        "id": "place-3",
         "host_id": "user-1",
         "host_name": "John Doe",
         "description": "A beautiful mansion.",
@@ -340,7 +340,7 @@
         "reviews": []
     },
     {
-        "id": "place-17",
+        "id": "place-2",
         "host_id": "user-2",
         "host_name": "Jane Smith",
         "description": "A small guest house.",
@@ -358,7 +358,7 @@
         "reviews": []
     },
     {
-        "id": "place-18",
+        "id": "place-3",
         "host_id": "user-3",
         "host_name": "Alice Johnson",
         "description": "A contemporary home.",
@@ -382,7 +382,7 @@
         ]
     },
     {
-        "id": "place-19",
+        "id": "place-1",
         "host_id": "user-1",
         "host_name": "John Doe",
         "description": "A vintage house.",
@@ -400,7 +400,7 @@
         "reviews": []
     },
     {
-        "id": "place-20",
+        "id": "place-2",
         "host_id": "user-2",
         "host_name": "Jane Smith",
         "description": "A rustic cabin.",
@@ -418,7 +418,7 @@
         "reviews": []
     },
     {
-        "id": "place-21",
+        "id": "place-1",
         "host_id": "user-3",
         "host_name": "Alice Johnson",
         "description": "A luxurious condo.",
@@ -447,7 +447,7 @@
         ]
     },
     {
-        "id": "place-22",
+        "id": "place-3",
         "host_id": "user-1",
         "host_name": "John Doe",
         "description": "A charming villa.",
@@ -465,7 +465,7 @@
         "reviews": []
     },
     {
-        "id": "place-23",
+        "id": "place-3",
         "host_id": "user-2",
         "host_name": "Jane Smith",
         "description": "A large family home.",
@@ -483,7 +483,7 @@
         "reviews": []
     },
     {
-        "id": "place-24",
+        "id": "place-2",
         "host_id": "user-3",
         "host_name": "Alice Johnson",
         "description": "A small studio apartment.",
@@ -501,7 +501,7 @@
         "reviews": []
     },
     {
-        "id": "place-25",
+        "id": "place-1",
         "host_id": "user-1",
         "host_name": "John Doe",
         "description": "A grand estate.",

@@ -180,14 +180,17 @@ function displayPlaces(places) {
         const placeCard = document.createElement('div');
         placeCard.className = 'place-card';
 
+        // Construct the image filename from the place ID
+        const placeId = place.id.split('-')[1]; // Extract the numeric part of the ID
+        const imageUrl = `static/place${placeId}.jpg`;
+
         placeCard.innerHTML = `
-            <img src="static/place1.jpg" class="place-image" alt="Place Image">
+            <img src="${imageUrl}" class="place-image" alt="Place Image">
             <h3>${place.description}</h3>
             <p>Price per night: $${place.price_per_night}</p>
             <p>Location: ${place.city_name}, ${place.country_name}</p>
             <button class="details-button" data-id="${place.id}">View Details</button>
         `;
-
         placeCard.querySelector('.details-button').addEventListener('click', () => {
             window.location.href = `place.html?place_id=${place.id}`;
         });
