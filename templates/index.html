@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBnB - Available Places</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="icon" href="static/icon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="static/logo.png" class="logo" alt="Application Logo">
+            <a href="login.html" id="login-link" class="login-button">Login</a>
+            <a href="#" id="logout-link" class="logout-button" style="display: none;">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Available Places</h2>
+        <div class="filter">
+            <label for="country-filter">Filter by country:</label>
+            <select id="country-filter">
+                <option value="all">All</option>
+                <!-- Populate countries dynamically -->
+            </select>
+        </section>
+        <section id="places-list">
+            <!-- Populate places dynamically -->
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 HBnB Evolution. All rights reserved.</p>
+    </footer>
+    <script src="static/scripts.js"></script>
+</body>
+</html>
